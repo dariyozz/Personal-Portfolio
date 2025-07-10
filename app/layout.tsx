@@ -1,0 +1,97 @@
+import type React from "react"
+import type { Metadata } from "next"
+import { Inter } from "next/font/google"
+import "./globals.css"
+import { ThemeProvider } from "@/components/theme-provider"
+import { Navigation } from "@/components/navigation"
+import { Footer } from "@/components/footer"
+
+const inter = Inter({ subsets: ["latin"] })
+
+export const metadata: Metadata = {
+  title: "Dario Jakovleski - Computer Science Student & Web Developer",
+  description:
+    "Portfolio of Dario Jakovleski, a 4th year Computer Science student at FINKI passionate about web development and problem-solving. Showcasing projects in JavaScript, React, and modern web technologies.",
+  keywords: [
+    "Dario Jakovleski",
+    "Web Developer",
+    "Computer Science",
+    "FINKI",
+    "React",
+    "JavaScript",
+    "Portfolio",
+    "Skopje",
+    "Macedonia",
+    "Frontend Developer",
+    "Student Developer",
+  ],
+  authors: [{ name: "Dario Jakovleski", url: "https://github.com/dariyozz" }],
+  creator: "Dario Jakovleski",
+  publisher: "Dario Jakovleski",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://dariojakovleski.vercel.app",
+    title: "Dario Jakovleski - Computer Science Student & Web Developer",
+    description: "Portfolio showcasing web development projects and skills of a FINKI Computer Science student",
+    siteName: "Dario Jakovleski Portfolio",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Dario Jakovleski Portfolio",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Dario Jakovleski - Computer Science Student & Web Developer",
+    description: "Portfolio showcasing web development projects and skills",
+    images: ["/og-image.png"],
+  },
+  verification: {
+    google: "your-google-verification-code",
+  },
+  alternates: {
+    canonical: "https://dariojakovleski.vercel.app",
+  },
+    generator: 'v0.dev'
+}
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  return (
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <meta name="theme-color" content="#84cc16" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+      </head>
+      <body className={inter.className}>
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} disableTransitionOnChange={false}>
+          <div className="theme-wrapper">
+            <Navigation />
+            <main>{children}</main>
+            <Footer />
+          </div>
+        </ThemeProvider>
+      </body>
+    </html>
+  )
+}
