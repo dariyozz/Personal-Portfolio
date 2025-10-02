@@ -3,69 +3,83 @@ import Link from "next/link"
 
 export function Footer() {
   return (
-    <footer className="bg-black border-t border-gray-800">
-      <div className="max-w-7xl mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Left - Name and Title */}
+    <footer className="bg-gray-900 border-t border-gray-800 py-12 px-4">
+      <div className="max-w-7xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-8">
+          {/* Brand */}
           <div>
-            <h3 className="text-2xl font-black mb-2">DARIO JAKOVLESKI</h3>
-            <p className="text-gray-400 text-sm">COMPUTER SCIENCE STUDENT</p>
-            <p className="text-gray-500 text-xs">FINKI - SKOPJE, MACEDONIA</p>
+            <h3 className="text-2xl font-black mb-4">DARIO JAKOVLESKI</h3>
+            <p className="text-gray-400">Full-Stack Developer & Software Engineer</p>
           </div>
 
-          {/* Center - Quick Links */}
+          {/* Quick Links */}
           <div>
-            <h4 className="text-sm font-bold text-lime-400 mb-4 tracking-wider">QUICK LINKS</h4>
-            <div className="space-y-2">
-              <Link href="/work" className="block text-sm text-gray-400 hover:text-white transition-colors">
-                WORK
-              </Link>
-              <Link href="/contact" className="block text-sm text-gray-400 hover:text-white transition-colors">
-                CONTACT
-              </Link>
-              <Link
-                href="https://github.com/dariyozz"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block text-sm text-gray-400 hover:text-white transition-colors"
-              >
-                GITHUB
-              </Link>
-            </div>
+            <h4 className="font-bold mb-4 text-lime-400">QUICK LINKS</h4>
+            <ul className="space-y-2">
+              <li>
+                <Link href="/" className="text-gray-400 hover:text-white transition-colors">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link href="/work" className="text-gray-400 hover:text-white transition-colors">
+                  Work
+                </Link>
+              </li>
+              <li>
+                <Link href="/about" className="text-gray-400 hover:text-white transition-colors">
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link href="/resume" className="text-gray-400 hover:text-white transition-colors">
+                  Resume
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="text-gray-400 hover:text-white transition-colors">
+                  Contact
+                </Link>
+              </li>
+            </ul>
           </div>
 
-          {/* Right - Social */}
+          {/* Connect */}
           <div>
-            <h4 className="text-sm font-bold text-lime-400 mb-4 tracking-wider">CONNECT</h4>
-            <div className="flex space-x-4">
+            <h4 className="font-bold mb-4 text-lime-400">CONNECT</h4>
+            <div className="space-y-3">
               <Link
                 href="mailto:dariojakovleski10@gmail.com"
-                className="text-gray-400 hover:text-lime-400 transition-colors"
+                className="flex items-center text-gray-400 hover:text-white transition-colors"
               >
-                <Mail className="h-5 w-5" />
+                <Mail className="h-5 w-5 mr-2" />
+                Email
               </Link>
               <Link
                 href="https://github.com/dariyozz"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-lime-400 transition-colors"
+                className="flex items-center text-gray-400 hover:text-white transition-colors"
               >
-                <Github className="h-5 w-5" />
+                <Github className="h-5 w-5 mr-2" />
+                GitHub
               </Link>
               <Link
-                href="https://linkedin.com/in/dario-jakovleski"
+                href="https://www.linkedin.com/in/dario-jakovleski-16417523b/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-lime-400 transition-colors"
+                className="flex items-center text-gray-400 hover:text-white transition-colors"
               >
-                <Linkedin className="h-5 w-5" />
+                <Linkedin className="h-5 w-5 mr-2" />
+                LinkedIn
               </Link>
             </div>
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-8 pt-8 text-center">
-          <p className="text-sm text-gray-500">© 2024 DARIO JAKOVLESKI. ALL RIGHTS RESERVED.</p>
+        <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+          <p>&copy; {new Date().getFullYear()} Dario Jakovleski. All rights reserved.</p>
+          <p className="text-sm mt-2">Built with Next.js, TypeScript, and Tailwind CSS</p>
         </div>
       </div>
     </footer>

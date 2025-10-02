@@ -6,37 +6,37 @@ import Link from "next/link"
 export default function HomePage() {
   const projects = [
     {
-      id: "snake-game",
-      title: "SNAKE GAME",
-      subtitle: "Classic Game Recreation",
+      id: "emt-2025",
+      title: "EMT-2025",
+      subtitle: "Full-Stack E-Commerce Platform",
       description:
-        "Famous 'Snake Game' built with JavaScript. A complete recreation of the classic arcade game with smooth gameplay, score tracking, and responsive controls. Built with HTML, CSS, and JavaScript in a single file.",
-      tech: "HTML, CSS, JavaScript",
+        "Enterprise-level e-commerce application built with Spring Boot backend and React frontend. Features include product management, shopping cart, order processing, user authentication, and admin dashboard. Demonstrates full-stack development with modern technologies and RESTful API design.",
+      tech: "Spring Boot, React, PostgreSQL",
       year: "2024",
       status: "LIVE",
-      githubUrl: "https://github.com/dariyozz/Snake-Game",
+      githubUrl: "https://github.com/dariyozz/EMT-2025",
     },
     {
-      id: "reactapp-crud",
-      title: "REACT CRUD APP",
-      subtitle: "Job Management Application",
+      id: "match-results-devops",
+      title: "MATCH RESULTS DEVOPS",
+      subtitle: "DevOps & Cloud Infrastructure",
       description:
-        "React CRUD Application for finding and creating jobs. Features full CRUD functionality with a clean, intuitive interface for managing job listings. Built with modern React patterns and responsive design.",
-      tech: "React, JavaScript, CSS",
+        "Sports match results platform with complete DevOps pipeline implementation. Features CI/CD automation, containerization with Docker, Kubernetes orchestration, monitoring, and cloud deployment. Showcases modern DevOps practices and infrastructure as code.",
+      tech: "Docker, Kubernetes, Jenkins, AWS",
       year: "2024",
       status: "LIVE",
-      githubUrl: "https://github.com/dariyozz/ReactApp-CRUD",
+      githubUrl: "https://github.com/dariyozz/Match-Results-DevOps-Project",
     },
     {
-      id: "portfolio-website",
-      title: "PORTFOLIO WEBSITE",
-      subtitle: "Personal Portfolio",
+      id: "advanced-programming",
+      title: "ADVANCED PROGRAMMING",
+      subtitle: "AI & Software Engineering",
       description:
-        "Modern, minimalistic portfolio website showcasing my projects and skills. Features a unique brutalist design approach with asymmetrical layouts and bold typography.",
-      tech: "Next.js, TypeScript, Tailwind CSS",
+        "Collection of advanced programming projects demonstrating design patterns, algorithms, data structures, and software architecture. Includes machine learning implementations, AI algorithms, data science projects, and distributed systems.",
+      tech: "Java, Python, TensorFlow, ML",
       year: "2024",
-      status: "LIVE",
-      githubUrl: "https://github.com/dariyozz",
+      status: "ONGOING",
+      githubUrl: "https://github.com/dariyozz/Advanced-Programming",
     },
   ]
 
@@ -60,7 +60,7 @@ export default function HomePage() {
               <ScrollAnimation delay={200}>
                 <div className="space-y-4 max-w-lg">
                   <p className="text-xl font-light text-gray-400 leading-relaxed">
-                    COMPUTER SCIENCE STUDENT & WEB DEVELOPER PASSIONATE ABOUT CODING AND PROBLEM-SOLVING
+                    COMPUTER SCIENCE STUDENT & SOFTWARE ENGINEER PASSIONATE ABOUT FULL-STACK DEVELOPMENT, DEVOPS, AND AI
                   </p>
                   <div className="flex items-center space-x-8">
                     <Link href="/work">
@@ -100,10 +100,11 @@ export default function HomePage() {
                 <div className="text-right space-y-4">
                   <div className="text-sm text-gray-500 font-mono">FOCUS AREAS</div>
                   <div className="space-y-1 text-sm text-gray-300">
-                    <div>WEB DEVELOPMENT</div>
-                    <div>JAVASCRIPT & REACT</div>
-                    <div>PROBLEM SOLVING</div>
-                    <div>FULL-STACK DEVELOPMENT</div>
+                    <div>SPRING BOOT & REACT</div>
+                    <div>DEVOPS & CLOUD</div>
+                    <div>AI & MACHINE LEARNING</div>
+                    <div>CYBERSECURITY</div>
+                    <div>SOFTWARE ENGINEERING</div>
                   </div>
                 </div>
               </ScrollAnimation>
@@ -224,17 +225,17 @@ export default function HomePage() {
                 <div className="space-y-6 text-lg text-gray-300 leading-relaxed">
                   <p>
                     I'm a 4th year Computer Science student at FINKI (Faculty of Computer Science & Engineering) in
-                    Skopje, Macedonia. Passionate about coding and problem-solving, I love creating web applications
-                    that solve real-world problems.
+                    Skopje, Macedonia. I specialize in full-stack development with Spring Boot and React, DevOps
+                    practices, and machine learning implementations.
                   </p>
                   <p>
-                    My journey in programming started with curiosity and has evolved into a deep passion for web
-                    development. I enjoy working with JavaScript, React, and exploring new technologies that push the
-                    boundaries of what's possible on the web.
+                    My journey in software engineering combines academic excellence with hands-on experience in
+                    enterprise technologies, cloud computing, and AI/ML projects. I'm passionate about building scalable
+                    applications and modern infrastructure.
                   </p>
                   <p>
-                    When I'm not coding, you'll find me learning new programming concepts, contributing to open source
-                    projects, or working on personal projects that challenge my skills and creativity.
+                    When I'm not coding, you'll find me learning new technologies, exploring DevOps tools, or working on
+                    machine learning projects that challenge my skills and creativity.
                   </p>
                 </div>
               </ScrollAnimation>
@@ -246,23 +247,27 @@ export default function HomePage() {
                   <h3 className="text-xl font-bold mb-4 text-lime-400">SKILLS</h3>
                   <div className="space-y-2 text-sm">
                     <div className="flex justify-between">
-                      <span>JavaScript</span>
+                      <span>Spring Boot</span>
                       <span className="text-gray-500">Advanced</span>
                     </div>
                     <div className="flex justify-between">
                       <span>React</span>
-                      <span className="text-gray-500">Intermediate</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span>HTML/CSS</span>
                       <span className="text-gray-500">Advanced</span>
                     </div>
                     <div className="flex justify-between">
-                      <span>Next.js</span>
-                      <span className="text-gray-500">Learning</span>
+                      <span>DevOps/Kubernetes</span>
+                      <span className="text-gray-500">Intermediate</span>
                     </div>
                     <div className="flex justify-between">
-                      <span>Python</span>
+                      <span>Machine Learning</span>
+                      <span className="text-gray-500">Intermediate</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span>Cloud (AWS)</span>
+                      <span className="text-gray-500">Intermediate</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span>Cybersecurity</span>
                       <span className="text-gray-500">Intermediate</span>
                     </div>
                   </div>
@@ -290,7 +295,7 @@ export default function HomePage() {
                       GITHUB
                     </Link>
                     <Link
-                      href="https://linkedin.com/in/dario-jakovleski"
+                      href="https://www.linkedin.com/in/dario-jakovleski-16417523b/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center text-gray-300 hover:text-white transition-colors group"

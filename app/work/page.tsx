@@ -6,52 +6,52 @@ import Link from "next/link"
 export default function WorkPage() {
   const projects = [
     {
-      id: "snake-game",
-      title: "SNAKE GAME",
-      subtitle: "Classic Game Recreation",
+      id: "emt-2025",
+      title: "EMT-2025",
+      subtitle: "Full-Stack E-Commerce Platform",
       description:
-        "Famous 'Snake Game' built with JavaScript. A complete recreation of the classic arcade game with smooth gameplay, score tracking, and responsive controls. Built with HTML, CSS, and JavaScript in a single file.",
-      tech: ["HTML", "CSS", "JavaScript"],
+        "Enterprise-level e-commerce application built with Spring Boot backend and React frontend. Features include product management, shopping cart, order processing, user authentication, and admin dashboard. Demonstrates full-stack development with modern technologies and RESTful API design.",
+      tech: ["Spring Boot", "React", "PostgreSQL", "REST API", "JWT"],
       year: "2024",
       status: "LIVE",
-      category: "GAME DEVELOPMENT",
-      githubUrl: "https://github.com/dariyozz/Snake-Game",
+      category: "FULL-STACK DEVELOPMENT",
+      githubUrl: "https://github.com/dariyozz/EMT-2025",
     },
     {
-      id: "reactapp-crud",
-      title: "REACT CRUD APP",
-      subtitle: "Job Management Application",
+      id: "match-results-devops",
+      title: "MATCH RESULTS DEVOPS",
+      subtitle: "DevOps & Cloud Infrastructure Project",
       description:
-        "React CRUD Application for finding and creating jobs. Features full CRUD functionality with a clean, intuitive interface for managing job listings. Built with modern React patterns and responsive design.",
-      tech: ["React", "JavaScript", "CSS"],
+        "Sports match results platform with complete DevOps pipeline implementation. Features CI/CD automation, containerization with Docker, Kubernetes orchestration, monitoring, and cloud deployment. Showcases modern DevOps practices and infrastructure as code.",
+      tech: ["Docker", "Kubernetes", "Jenkins", "AWS", "MongoDB", "Node.js"],
       year: "2024",
       status: "LIVE",
-      category: "WEB APPLICATION",
-      githubUrl: "https://github.com/dariyozz/ReactApp-CRUD",
+      category: "DEVOPS & CLOUD",
+      githubUrl: "https://github.com/dariyozz/Match-Results-DevOps-Project",
+    },
+    {
+      id: "advanced-programming",
+      title: "ADVANCED PROGRAMMING",
+      subtitle: "Complex Software Engineering Solutions",
+      description:
+        "Collection of advanced programming projects demonstrating design patterns, algorithms, data structures, and software architecture. Includes machine learning implementations, AI algorithms, data science projects, and distributed systems. Built with Java, Python, and modern frameworks.",
+      tech: ["Java", "Python", "TensorFlow", "Scikit-learn", "Design Patterns"],
+      year: "2024",
+      status: "ONGOING",
+      category: "SOFTWARE ENGINEERING",
+      githubUrl: "https://github.com/dariyozz/Advanced-Programming",
     },
     {
       id: "portfolio-website",
       title: "PORTFOLIO WEBSITE",
       subtitle: "Personal Portfolio",
       description:
-        "Modern, minimalistic portfolio website showcasing my projects and skills. Features a unique brutalist design approach with asymmetrical layouts and bold typography.",
+        "Modern, minimalistic portfolio website showcasing my projects and skills. Features a unique brutalist design approach with asymmetrical layouts and bold typography. Built with Next.js, TypeScript, and Tailwind CSS.",
       tech: ["Next.js", "TypeScript", "Tailwind CSS"],
       year: "2024",
       status: "LIVE",
       category: "WEB DESIGN",
-      githubUrl: "https://github.com/dariyozz",
-    },
-    {
-      id: "university-projects",
-      title: "UNIVERSITY PROJECTS",
-      subtitle: "Academic Work Collection",
-      description:
-        "Collection of various projects completed during my studies at FINKI. Includes algorithms, data structures, web development projects, and software engineering assignments.",
-      tech: ["Java", "C++", "Python", "JavaScript"],
-      year: "2021-2024",
-      status: "ONGOING",
-      category: "ACADEMIC",
-      githubUrl: "https://github.com/dariyozz",
+      githubUrl: "https://github.com/dariyozz/Personal-Portfolio",
     },
   ]
 
@@ -64,8 +64,8 @@ export default function WorkPage() {
           <h1 className="text-8xl font-black text-lime-400 mb-8">PROJECTS</h1>
           <div className="w-32 h-1 bg-lime-400"></div>
           <p className="text-xl text-gray-400 mt-8 max-w-2xl">
-            A collection of my work spanning web development, game development, and academic projects. Each project
-            represents a learning journey and creative challenge.
+            A collection of my work spanning full-stack development, DevOps, machine learning, and software engineering.
+            Each project represents a learning journey and creative challenge.
           </p>
         </div>
 

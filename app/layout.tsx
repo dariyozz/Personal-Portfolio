@@ -5,25 +5,34 @@ import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
+import { Analytics } from "@vercel/analytics/react"
+import { Suspense } from "react"
 
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Dario Jakovleski - Computer Science Student & Web Developer",
+  title: "Dario Jakovleski - Computer Science Student & Software Engineer",
   description:
-    "Portfolio of Dario Jakovleski, a 4th year Computer Science student at FINKI passionate about web development and problem-solving. Showcasing projects in JavaScript, React, and modern web technologies.",
+    "Portfolio of Dario Jakovleski, a 4th year Computer Science student at FINKI specializing in full-stack development, DevOps, cloud computing, cybersecurity, and machine learning. Showcasing projects in Spring Boot, React, Kubernetes, and AI.",
   keywords: [
     "Dario Jakovleski",
-    "Web Developer",
+    "Full-Stack Developer",
+    "Software Engineer",
     "Computer Science",
     "FINKI",
+    "Spring Boot",
     "React",
-    "JavaScript",
+    "DevOps",
+    "Kubernetes",
+    "Machine Learning",
+    "AI",
+    "Cloud Computing",
+    "Cybersecurity",
+    "Application Security",
+    "Penetration Testing",
     "Portfolio",
     "Skopje",
     "Macedonia",
-    "Frontend Developer",
-    "Student Developer",
   ],
   authors: [{ name: "Dario Jakovleski", url: "https://github.com/dariyozz" }],
   creator: "Dario Jakovleski",
@@ -43,8 +52,9 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://dariojakovleski.vercel.app",
-    title: "Dario Jakovleski - Computer Science Student & Web Developer",
-    description: "Portfolio showcasing web development projects and skills of a FINKI Computer Science student",
+    title: "Dario Jakovleski - Computer Science Student & Software Engineer",
+    description:
+      "Portfolio showcasing full-stack development, DevOps, cybersecurity, and machine learning projects by a FINKI Computer Science student",
     siteName: "Dario Jakovleski Portfolio",
     images: [
       {
@@ -57,8 +67,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dario Jakovleski - Computer Science Student & Web Developer",
-    description: "Portfolio showcasing web development projects and skills",
+    title: "Dario Jakovleski - Computer Science Student & Software Engineer",
+    description: "Portfolio showcasing full-stack development, DevOps, cybersecurity, and machine learning projects",
     images: ["/og-image.png"],
   },
   verification: {
@@ -67,7 +77,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://dariojakovleski.vercel.app",
   },
-    generator: 'v0.dev'
+  generator: "v0.dev",
 }
 
 export default function RootLayout({
@@ -87,10 +97,13 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} disableTransitionOnChange={false}>
           <div className="theme-wrapper">
             <Navigation />
-            <main>{children}</main>
+            <Suspense>
+              <main>{children}</main>
+            </Suspense>
             <Footer />
           </div>
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   )
