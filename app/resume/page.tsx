@@ -3,13 +3,16 @@
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Download, Mail, Github, Linkedin, MapPin, Calendar, Award, Briefcase, Code } from "lucide-react"
+import { Mail, Github, Linkedin, MapPin, Calendar, Award, Briefcase, Code, ExternalLink } from "lucide-react"
 import Link from "next/link"
 
 export default function ResumePage() {
   const handleDownload = () => {
-    // This would trigger the PDF download
-    alert("Resume download functionality - Add your PDF here!")
+    // Open the PDF in a new tab - users can then download from there
+    window.open(
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/CopyOfDario_Jakovleski_Resume10192025-YnoyA8rqpMeqUTZE5yxZu8oYTczji4.pdf",
+      "_blank",
+    )
   }
 
   return (
@@ -27,8 +30,8 @@ export default function ResumePage() {
               </p>
             </div>
             <Button onClick={handleDownload} size="lg" className="bg-lime-400 text-black hover:bg-lime-300 font-bold">
-              <Download className="mr-2 h-5 w-5" />
-              DOWNLOAD PDF
+              <ExternalLink className="mr-2 h-5 w-5" />
+              VIEW PDF
             </Button>
           </div>
 
@@ -310,10 +313,10 @@ export default function ResumePage() {
         {/* Download CTA */}
         <div className="mt-12 text-center p-8 bg-gray-900 rounded-lg border border-gray-800">
           <h3 className="text-2xl font-black mb-4">WANT A PDF COPY?</h3>
-          <p className="text-gray-400 mb-6">Download my resume for offline viewing or printing.</p>
+          <p className="text-gray-400 mb-6">View and download my resume in a new tab.</p>
           <Button onClick={handleDownload} size="lg" className="bg-lime-400 text-black hover:bg-lime-300 font-bold">
-            <Download className="mr-2 h-5 w-5" />
-            DOWNLOAD RESUME
+            <ExternalLink className="mr-2 h-5 w-5" />
+            VIEW RESUME PDF
           </Button>
         </div>
       </div>
