@@ -1,3 +1,4 @@
 #!/bin/bash
+set -e
 cd /vercel/share/v0-project
-pnpm install --no-frozen-lockfile
+pnpm add resend@^4.1.0
