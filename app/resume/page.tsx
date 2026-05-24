@@ -10,7 +10,7 @@ export default function ResumePage() {
   const handleDownload = () => {
     // Open the PDF in a new tab - users can then download from there
     window.open(
-      "https://blobs.vusercontent.net/blob/Dario_Jakovleski_CV%20-YV22jKhPITUIlQYqRJGxBM25tUKGGF.pdf",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/CopyOfDario_Jakovleski_Resume10192025-YnoyA8rqpMeqUTZE5yxZu8oYTczji4.pdf",
       "_blank",
     )
   }
@@ -25,8 +25,8 @@ export default function ResumePage() {
               <h1 className="text-6xl font-black mb-4">RESUME</h1>
               <div className="w-24 h-1 bg-lime-400 mb-6"></div>
               <p className="text-xl text-gray-400">
-                Full-stack software engineer skilled in Java (Spring Boot), React.js, and Next.js with strong
-                foundations in DevOps, cloud infrastructure, and cybersecurity
+                Full-Stack Developer & Software Engineer specializing in Spring Boot, React, DevOps, Cybersecurity, and
+                Machine Learning
               </p>
             </div>
             <Button onClick={handleDownload} size="lg" className="bg-lime-400 text-black hover:bg-lime-300 font-bold">
@@ -76,10 +76,10 @@ export default function ResumePage() {
           </CardHeader>
           <CardContent className="text-gray-300 leading-relaxed">
             <p>
-              Full-stack software engineer skilled in Java (Spring Boot), React.js, and Next.js with strong foundations
-              in DevOps, cloud infrastructure, and cybersecurity. Passionate about clean code, automation, and building
-              secure, high-performance systems. Experienced in deploying on AWS and Azure with Docker, Kubernetes, and
-              CI/CD pipelines via GitHub Actions.
+              4th-year Computer Science student at FINKI with strong expertise in full-stack development, DevOps
+              practices, cybersecurity, and machine learning. Experienced in building enterprise-level applications with
+              Spring Boot and React, implementing CI/CD pipelines, security best practices, and developing AI/ML
+              solutions. Passionate about clean code, scalable architecture, and secure software engineering practices.
             </p>
           </CardContent>
         </Card>
@@ -96,19 +96,19 @@ export default function ResumePage() {
             <div>
               <div className="flex justify-between items-start mb-2">
                 <div>
-                  <h3 className="text-xl font-bold">BSc in Internet, Networks & Security</h3>
-                  <p className="text-gray-400">Faculty of Computer Science & Engineering (FINKI)</p>
+                  <h3 className="text-xl font-bold">Bachelor of Science in Computer Science</h3>
+                  <p className="text-gray-400">Faculty of Computer Science and Engineering (FINKI)</p>
                 </div>
                 <div className="text-right">
                   <div className="flex items-center text-gray-400">
                     <Calendar className="h-4 w-4 mr-2" />
-                    Expected September 2026
+                    2021 - 2025
                   </div>
-                  <p className="text-gray-400">Skopje, North Macedonia</p>
+                  <p className="text-gray-400">Skopje, Macedonia</p>
                 </div>
               </div>
               <p className="text-gray-300 mt-2">
-                Focus on Network Security, Cloud Computing, Web Technologies, and Software Engineering
+                Focus on Software Engineering, Web Technologies, Cloud Computing, and Artificial Intelligence
               </p>
             </div>
           </CardContent>
@@ -126,47 +126,7 @@ export default function ResumePage() {
             <div>
               <h4 className="font-bold text-white mb-3">Backend Development</h4>
               <div className="flex flex-wrap gap-2">
-                {["Java", "Spring Boot", "Node.js", "REST API", "MySQL", "PostgreSQL"].map((skill) => (
-                  <Badge key={skill} variant="secondary" className="bg-lime-400/10 text-lime-400">
-                    {skill}
-                  </Badge>
-                ))}
-              </div>
-            </div>
-            <div>
-              <h4 className="font-bold text-white mb-3">Frontend Development</h4>
-              <div className="flex flex-wrap gap-2">
-                {["React", "Next.js", "TypeScript", "JavaScript", "HTML/CSS", "Tailwind CSS"].map((skill) => (
-                  <Badge key={skill} variant="secondary" className="bg-lime-400/10 text-lime-400">
-                    {skill}
-                  </Badge>
-                ))}
-              </div>
-            </div>
-            <div>
-              <h4 className="font-bold text-white mb-3">DevOps & Cloud</h4>
-              <div className="flex flex-wrap gap-2">
-                {["Docker", "Kubernetes", "AWS", "GCP", "Azure", "CI/CD", "GitHub Actions", "Linux"].map((skill) => (
-                  <Badge key={skill} variant="secondary" className="bg-lime-400/10 text-lime-400">
-                    {skill}
-                  </Badge>
-                ))}
-              </div>
-            </div>
-            <div>
-              <h4 className="font-bold text-white mb-3">AI & Machine Learning</h4>
-              <div className="flex flex-wrap gap-2">
-                {["Python", "Machine Learning", "Data Science", "Pandas", "NumPy"].map((skill) => (
-                  <Badge key={skill} variant="secondary" className="bg-lime-400/10 text-lime-400">
-                    {skill}
-                  </Badge>
-                ))}
-              </div>
-            </div>
-            <div>
-              <h4 className="font-bold text-white mb-3">Cybersecurity</h4>
-              <div className="flex flex-wrap gap-2">
-                {["Ethical Hacking", "Penetration Testing", "Network Security", "Cryptography", "Security Auditing"].map(
+                {["Spring Boot", "Java", "Node.js", "REST API", "Hibernate", "JPA", "PostgreSQL", "MongoDB"].map(
                   (skill) => (
                     <Badge key={skill} variant="secondary" className="bg-lime-400/10 text-lime-400">
                       {skill}
@@ -176,9 +136,50 @@ export default function ResumePage() {
               </div>
             </div>
             <div>
-              <h4 className="font-bold text-white mb-3">Programming Languages</h4>
+              <h4 className="font-bold text-white mb-3">Frontend Development</h4>
               <div className="flex flex-wrap gap-2">
-                {["Java", "JavaScript", "TypeScript", "Python", "C++", "C#"].map((skill) => (
+                {["React", "Next.js", "TypeScript", "JavaScript", "HTML/CSS", "Tailwind CSS", "Redux"].map((skill) => (
+                  <Badge key={skill} variant="secondary" className="bg-lime-400/10 text-lime-400">
+                    {skill}
+                  </Badge>
+                ))}
+              </div>
+            </div>
+            <div>
+              <h4 className="font-bold text-white mb-3">DevOps & Cloud</h4>
+              <div className="flex flex-wrap gap-2">
+                {["Docker", "Kubernetes", "Jenkins", "AWS", "CI/CD", "Terraform", "Git", "Linux"].map((skill) => (
+                  <Badge key={skill} variant="secondary" className="bg-lime-400/10 text-lime-400">
+                    {skill}
+                  </Badge>
+                ))}
+              </div>
+            </div>
+            <div>
+              <h4 className="font-bold text-white mb-3">AI & Machine Learning</h4>
+              <div className="flex flex-wrap gap-2">
+                {["Python", "TensorFlow", "Scikit-learn", "Pandas", "NumPy", "Neural Networks", "Data Science"].map(
+                  (skill) => (
+                    <Badge key={skill} variant="secondary" className="bg-lime-400/10 text-lime-400">
+                      {skill}
+                    </Badge>
+                  ),
+                )}
+              </div>
+            </div>
+            <div>
+              <h4 className="font-bold text-white mb-3">Cybersecurity</h4>
+              <div className="flex flex-wrap gap-2">
+                {[
+                  "Application Security",
+                  "Penetration Testing",
+                  "OWASP Top 10",
+                  "Network Security",
+                  "Wireshark",
+                  "Burp Suite",
+                  "Cryptography",
+                  "Security Auditing",
+                ].map((skill) => (
                   <Badge key={skill} variant="secondary" className="bg-lime-400/10 text-lime-400">
                     {skill}
                   </Badge>

@@ -60,8 +60,7 @@ export default function HomePage() {
               <ScrollAnimation delay={200}>
                 <div className="space-y-4 max-w-lg">
                   <p className="text-xl font-light text-gray-400 leading-relaxed">
-                    SOFTWARE ENGINEER SKILLED IN JAVA (SPRING BOOT), REACT.JS, AND NEXT.JS WITH STRONG FOUNDATIONS IN
-                    DEVOPS, CLOUD INFRASTRUCTURE, AND CYBERSECURITY
+                    COMPUTER SCIENCE STUDENT & SOFTWARE ENGINEER PASSIONATE ABOUT FULL-STACK DEVELOPMENT, DEVOPS, AND AI
                   </p>
                   <div className="flex items-center space-x-8">
                     <Link href="/work">
@@ -85,35 +84,27 @@ export default function HomePage() {
               <ScrollAnimation delay={400}>
                 <div className="text-right space-y-4">
                   <div className="text-sm text-gray-500 font-mono">CURRENTLY</div>
-                  <div className="text-lg text-white">SOFTWARE DEVELOPER</div>
-                  <div className="text-sm text-gray-400">FREELANCE — SINCE SEP 2023</div>
+                  <div className="text-lg text-white">4TH YEAR STUDENT</div>
+                  <div className="text-sm text-gray-400">@ FINKI - FACULTY OF COMPUTER SCIENCE & ENGINEERING</div>
                 </div>
               </ScrollAnimation>
 
               <ScrollAnimation delay={600}>
                 <div className="text-right space-y-4">
-                  <div className="text-sm text-gray-500 font-mono">EDUCATION</div>
-                  <div className="text-lg text-white">BSC INTERNET, NETWORKS & SECURITY</div>
-                  <div className="text-sm text-gray-400">@ FINKI — EXPECTED SEP 2026</div>
+                  <div className="text-sm text-gray-500 font-mono">LOCATION</div>
+                  <div className="text-lg text-white">SKOPJE, MACEDONIA</div>
                 </div>
               </ScrollAnimation>
 
               <ScrollAnimation delay={800}>
                 <div className="text-right space-y-4">
-                  <div className="text-sm text-gray-500 font-mono">LOCATION</div>
-                  <div className="text-lg text-white">SKOPJE, NORTH MACEDONIA</div>
-                </div>
-              </ScrollAnimation>
-
-              <ScrollAnimation delay={1000}>
-                <div className="text-right space-y-4">
                   <div className="text-sm text-gray-500 font-mono">FOCUS AREAS</div>
                   <div className="space-y-1 text-sm text-gray-300">
-                    <div>JAVA & SPRING BOOT</div>
-                    <div>REACT & NEXT.JS</div>
-                    <div>DEVOPS & CLOUD (AWS/AZURE)</div>
-                    <div>CYBERSECURITY & PEN TESTING</div>
-                    <div>PYTHON & MACHINE LEARNING</div>
+                    <div>SPRING BOOT & REACT</div>
+                    <div>DEVOPS & CLOUD</div>
+                    <div>AI & MACHINE LEARNING</div>
+                    <div>CYBERSECURITY</div>
+                    <div>SOFTWARE ENGINEERING</div>
                   </div>
                 </div>
               </ScrollAnimation>
@@ -233,18 +224,18 @@ export default function HomePage() {
                 <h2 className="text-5xl font-black mb-8">ABOUT</h2>
                 <div className="space-y-6 text-lg text-gray-300 leading-relaxed">
                   <p>
-                    I'm a full-stack software engineer skilled in Java (Spring Boot), React.js, and Next.js. Currently
-                    pursuing my BSc in Internet, Networks & Security at FINKI in Skopje, North Macedonia, expected to
-                    graduate in September 2026.
+                    I'm a 4th year Computer Science student at FINKI (Faculty of Computer Science & Engineering) in
+                    Skopje, Macedonia. I specialize in full-stack development with Spring Boot and React, DevOps
+                    practices, and machine learning implementations.
                   </p>
                   <p>
-                    As a freelance developer since September 2023, I've designed and delivered full-stack web
-                    applications for clients across diverse domains, deployed on AWS and Azure with Docker, Kubernetes,
-                    and CI/CD pipelines via GitHub Actions.
+                    My journey in software engineering combines academic excellence with hands-on experience in
+                    enterprise technologies, cloud computing, and AI/ML projects. I'm passionate about building scalable
+                    applications and modern infrastructure.
                   </p>
                   <p>
-                    I'm passionate about clean code, automation, and building secure, high-performance systems. My focus
-                    areas include DevOps, cloud infrastructure, cybersecurity, and machine learning.
+                    When I'm not coding, you'll find me learning new technologies, exploring DevOps tools, or working on
+                    machine learning projects that challenge my skills and creativity.
                   </p>
                 </div>
               </ScrollAnimation>
@@ -256,27 +247,27 @@ export default function HomePage() {
                   <h3 className="text-xl font-bold mb-4 text-lime-400">SKILLS</h3>
                   <div className="space-y-2 text-sm">
                     <div className="flex justify-between">
-                      <span>Java & Spring Boot</span>
+                      <span>Spring Boot</span>
                       <span className="text-gray-500">Advanced</span>
                     </div>
                     <div className="flex justify-between">
-                      <span>React & Next.js</span>
+                      <span>React</span>
                       <span className="text-gray-500">Advanced</span>
                     </div>
                     <div className="flex justify-between">
-                      <span>Docker & Kubernetes</span>
-                      <span className="text-gray-500">Advanced</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span>AWS / GCP / Azure</span>
+                      <span>DevOps/Kubernetes</span>
                       <span className="text-gray-500">Intermediate</span>
                     </div>
                     <div className="flex justify-between">
-                      <span>Python & ML</span>
+                      <span>Machine Learning</span>
                       <span className="text-gray-500">Intermediate</span>
                     </div>
                     <div className="flex justify-between">
-                      <span>Ethical Hacking</span>
+                      <span>Cloud (AWS)</span>
+                      <span className="text-gray-500">Intermediate</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span>Cybersecurity</span>
                       <span className="text-gray-500">Intermediate</span>
                     </div>
                   </div>
