@@ -5,7 +5,128 @@ import Link from "next/link"
 
 export default function WorkPage() {
   const projects = [
-    // === ENTERPRISE & FULL-STACK ===
+    // === YOUR PRIORITY ORDER ===
+    {
+      id: "data-science",
+      title: "DATA SCIENCE",
+      subtitle: "Analytics & Visualization",
+      description:
+        "Data science projects featuring exploratory data analysis, statistical modeling, and data visualization. Covers real-world datasets with insights extraction and predictive modeling techniques.",
+      tech: ["Python", "Pandas", "NumPy", "Matplotlib", "Jupyter Notebook"],
+      year: "2026",
+      status: "LIVE",
+      category: "DATA SCIENCE",
+      githubUrl: "https://github.com/dariyozz/Data_Science",
+    },
+    {
+      id: "emt-2025",
+      title: "E-COMMERCE APP",
+      subtitle: "Full-Stack Online Store",
+      description:
+        "E-commerce application built for the Electronic and Mobile Commerce course. Features product management, shopping cart, order processing, and responsive mobile-first design. Demonstrates full-stack development with modern web technologies.",
+      tech: ["JavaScript", "React", "E-commerce", "REST API"],
+      year: "2025",
+      status: "LIVE",
+      category: "FULL-STACK DEVELOPMENT",
+      githubUrl: "https://github.com/dariyozz/EMT-2025",
+    },
+    {
+      id: "advanced-programming",
+      title: "ADVANCED PROGRAMMING",
+      subtitle: "Design Patterns & Algorithms",
+      description:
+        "Collection of advanced programming projects demonstrating design patterns, algorithms, data structures, and software architecture. Showcases clean code principles and software engineering best practices.",
+      tech: ["Java", "Design Patterns", "Algorithms", "OOP", "SOLID"],
+      year: "2025",
+      status: "LIVE",
+      category: "SOFTWARE ENGINEERING",
+      githubUrl: "https://github.com/dariyozz/Advanced_Programing",
+    },
+    {
+      id: "ethical-hacking",
+      title: "ETHICAL HACKING",
+      subtitle: "Cybersecurity Research & Penetration Testing",
+      description:
+        "Comprehensive collection of ethical hacking projects and security research. Includes penetration testing methodologies, vulnerability assessments, security audits, and defensive techniques. Showcases practical cybersecurity skills.",
+      tech: ["Kali Linux", "Metasploit", "Burp Suite", "Python", "Network Security"],
+      year: "2026",
+      status: "ONGOING",
+      category: "CYBERSECURITY",
+      githubUrl: "https://github.com/dariyozz/Ethical-Hacking",
+    },
+    {
+      id: "match-results-devops",
+      title: "MATCH RESULTS DEVOPS",
+      subtitle: "DevOps & Cloud Infrastructure Project",
+      description:
+        "Sports match results platform with complete DevOps pipeline implementation. Features CI/CD automation, containerization with Docker, Kubernetes orchestration, monitoring, and cloud deployment. Showcases modern DevOps practices and infrastructure as code.",
+      tech: ["Docker", "Kubernetes", "Jenkins", "AWS", "TypeScript", "Node.js"],
+      year: "2025",
+      status: "LIVE",
+      category: "DEVOPS & CLOUD",
+      githubUrl: "https://github.com/dariyozz/Match-Results-DevOps-Project",
+    },
+    {
+      id: "software-quality-testing",
+      title: "SOFTWARE QUALITY & TESTING",
+      subtitle: "QA & Test Automation",
+      description:
+        "Software quality assurance and testing projects covering unit testing, integration testing, test automation, and CI/CD testing pipelines. Demonstrates commitment to code quality and reliability.",
+      tech: ["Java", "JUnit", "Selenium", "TestNG", "CI/CD"],
+      year: "2026",
+      status: "ONGOING",
+      category: "QA & TESTING",
+      githubUrl: "https://github.com/dariyozz/Software-Quality-And-Testing",
+    },
+    {
+      id: "design-computer-networks",
+      title: "DESIGN OF COMPUTER NETWORKS",
+      subtitle: "Network Architecture & Design",
+      description:
+        "Projects focused on computer network design, topology planning, and network infrastructure. Covers routing protocols, network security, and enterprise network architecture principles.",
+      tech: ["Cisco", "Network Design", "TCP/IP", "Routing", "Subnetting"],
+      year: "2026",
+      status: "ONGOING",
+      category: "NETWORKING",
+      githubUrl: "https://github.com/dariyozz/Design-of-computer-networks",
+    },
+    {
+      id: "algorithms-data-structures",
+      title: "ALGORITHMS & DATA STRUCTURES",
+      subtitle: "Core Computer Science",
+      description:
+        "Comprehensive collection of algorithm implementations and data structure exercises. Covers sorting, searching, graphs, trees, dynamic programming, and more. Essential computer science fundamentals in Java.",
+      tech: ["Java", "Algorithms", "Data Structures", "Problem Solving"],
+      year: "2024",
+      status: "LIVE",
+      category: "COMPUTER SCIENCE",
+      githubUrl: "https://github.com/dariyozz/Algorithms-DataStructures-Java",
+    },
+    {
+      id: "digital-forensics",
+      title: "DIGITAL FORENSICS",
+      subtitle: "Incident Response & Analysis",
+      description:
+        "Digital forensics projects covering evidence acquisition, analysis, and reporting. Includes memory forensics, disk analysis, network forensics, and malware analysis. Essential skills for cybersecurity incident response.",
+      tech: ["Autopsy", "Volatility", "Wireshark", "FTK", "Python"],
+      year: "2026",
+      status: "ONGOING",
+      category: "CYBERSECURITY",
+      githubUrl: "https://github.com/dariyozz/Digital-Forensics",
+    },
+    {
+      id: "ai-labs",
+      title: "AI LABS 2025",
+      subtitle: "Machine Learning & AI Projects",
+      description:
+        "Collection of AI and machine learning laboratory projects. Includes neural networks, deep learning models, natural language processing, and computer vision implementations. Built with Python and modern ML frameworks.",
+      tech: ["Python", "TensorFlow", "PyTorch", "Scikit-learn", "Jupyter"],
+      year: "2025",
+      status: "LIVE",
+      category: "AI / MACHINE LEARNING",
+      githubUrl: "https://github.com/dariyozz/AI-Labs-2025",
+    },
+    // === REMAINING PROJECTS ===
     {
       id: "e-commerce-fullstack",
       title: "E-COMMERCE FULLSTACK",
@@ -17,18 +138,6 @@ export default function WorkPage() {
       status: "IN PROGRESS",
       category: "FULL-STACK DEVELOPMENT",
       githubUrl: "https://github.com/dariyozz/E-commerceShop-Fullstack",
-    },
-    {
-      id: "emt-2025",
-      title: "EMT-2025",
-      subtitle: "Electronic & Mobile Commerce",
-      description:
-        "E-commerce application built for the Electronic and Mobile Commerce course. Features product management, shopping cart, order processing, and responsive mobile-first design. Demonstrates full-stack development with modern web technologies.",
-      tech: ["JavaScript", "React", "E-commerce", "REST API"],
-      year: "2025",
-      status: "LIVE",
-      category: "FULL-STACK DEVELOPMENT",
-      githubUrl: "https://github.com/dariyozz/EMT-2025",
     },
     {
       id: "levelup-mvc",
@@ -54,19 +163,6 @@ export default function WorkPage() {
       category: "SYSTEM DESIGN",
       githubUrl: "https://github.com/dariyozz/Distributed-Systems-Project",
     },
-    // === DEVOPS & CLOUD ===
-    {
-      id: "match-results-devops",
-      title: "MATCH RESULTS DEVOPS",
-      subtitle: "DevOps & Cloud Infrastructure Project",
-      description:
-        "Sports match results platform with complete DevOps pipeline implementation. Features CI/CD automation, containerization with Docker, Kubernetes orchestration, monitoring, and cloud deployment. Showcases modern DevOps practices and infrastructure as code.",
-      tech: ["Docker", "Kubernetes", "Jenkins", "AWS", "TypeScript", "Node.js"],
-      year: "2025",
-      status: "LIVE",
-      category: "DEVOPS & CLOUD",
-      githubUrl: "https://github.com/dariyozz/Match-Results-DevOps-Project",
-    },
     {
       id: "kiii2025",
       title: "KIII 2025",
@@ -78,31 +174,6 @@ export default function WorkPage() {
       status: "LIVE",
       category: "DEVOPS & CLOUD",
       githubUrl: "https://github.com/dariyozz/kiii2025",
-    },
-    // === CYBERSECURITY ===
-    {
-      id: "ethical-hacking",
-      title: "ETHICAL HACKING",
-      subtitle: "Cybersecurity Research & Penetration Testing",
-      description:
-        "Comprehensive collection of ethical hacking projects and security research. Includes penetration testing methodologies, vulnerability assessments, security audits, and defensive techniques. Showcases practical cybersecurity skills.",
-      tech: ["Kali Linux", "Metasploit", "Burp Suite", "Python", "Network Security"],
-      year: "2026",
-      status: "ONGOING",
-      category: "CYBERSECURITY",
-      githubUrl: "https://github.com/dariyozz/Ethical-Hacking",
-    },
-    {
-      id: "digital-forensics",
-      title: "DIGITAL FORENSICS",
-      subtitle: "Incident Response & Analysis",
-      description:
-        "Digital forensics projects covering evidence acquisition, analysis, and reporting. Includes memory forensics, disk analysis, network forensics, and malware analysis. Essential skills for cybersecurity incident response.",
-      tech: ["Autopsy", "Volatility", "Wireshark", "FTK", "Python"],
-      year: "2026",
-      status: "ONGOING",
-      category: "CYBERSECURITY",
-      githubUrl: "https://github.com/dariyozz/Digital-Forensics",
     },
     {
       id: "information-security",
@@ -116,32 +187,6 @@ export default function WorkPage() {
       category: "CYBERSECURITY",
       githubUrl: "https://github.com/dariyozz/Information-security",
     },
-    // === AI & DATA SCIENCE ===
-    {
-      id: "ai-labs",
-      title: "AI LABS 2025",
-      subtitle: "Machine Learning & AI Projects",
-      description:
-        "Collection of AI and machine learning laboratory projects. Includes neural networks, deep learning models, natural language processing, and computer vision implementations. Built with Python and modern ML frameworks.",
-      tech: ["Python", "TensorFlow", "PyTorch", "Scikit-learn", "Jupyter"],
-      year: "2025",
-      status: "LIVE",
-      category: "AI / MACHINE LEARNING",
-      githubUrl: "https://github.com/dariyozz/AI-Labs-2025",
-    },
-    {
-      id: "data-science",
-      title: "DATA SCIENCE",
-      subtitle: "Analytics & Visualization",
-      description:
-        "Data science projects featuring exploratory data analysis, statistical modeling, and data visualization. Covers real-world datasets with insights extraction and predictive modeling techniques.",
-      tech: ["Python", "Pandas", "NumPy", "Matplotlib", "Jupyter Notebook"],
-      year: "2026",
-      status: "LIVE",
-      category: "DATA SCIENCE",
-      githubUrl: "https://github.com/dariyozz/Data_Science",
-    },
-    // === BACKEND DEVELOPMENT ===
     {
       id: "web-programming-springboot",
       title: "WEB PROGRAMMING",
@@ -154,45 +199,6 @@ export default function WorkPage() {
       category: "BACKEND DEVELOPMENT",
       githubUrl: "https://github.com/dariyozz/Web_Programming_SpringBOOT",
     },
-    // === SOFTWARE ENGINEERING & QA ===
-    {
-      id: "advanced-programming",
-      title: "ADVANCED PROGRAMMING",
-      subtitle: "Design Patterns & Algorithms",
-      description:
-        "Collection of advanced programming projects demonstrating design patterns, algorithms, data structures, and software architecture. Showcases clean code principles and software engineering best practices.",
-      tech: ["Java", "Design Patterns", "Algorithms", "OOP", "SOLID"],
-      year: "2025",
-      status: "LIVE",
-      category: "SOFTWARE ENGINEERING",
-      githubUrl: "https://github.com/dariyozz/Advanced_Programing",
-    },
-    {
-      id: "software-quality-testing",
-      title: "SOFTWARE QUALITY & TESTING",
-      subtitle: "QA & Test Automation",
-      description:
-        "Software quality assurance and testing projects covering unit testing, integration testing, test automation, and CI/CD testing pipelines. Demonstrates commitment to code quality and reliability.",
-      tech: ["Java", "JUnit", "Selenium", "TestNG", "CI/CD"],
-      year: "2026",
-      status: "ONGOING",
-      category: "QA & TESTING",
-      githubUrl: "https://github.com/dariyozz/Software-Quality-And-Testing",
-    },
-    // === NETWORKING ===
-    {
-      id: "design-computer-networks",
-      title: "DESIGN OF COMPUTER NETWORKS",
-      subtitle: "Network Architecture & Design",
-      description:
-        "Projects focused on computer network design, topology planning, and network infrastructure. Covers routing protocols, network security, and enterprise network architecture principles.",
-      tech: ["Cisco", "Network Design", "TCP/IP", "Routing", "Subnetting"],
-      year: "2026",
-      status: "ONGOING",
-      category: "NETWORKING",
-      githubUrl: "https://github.com/dariyozz/Design-of-computer-networks",
-    },
-    // === FRONTEND & WEB DEVELOPMENT ===
     {
       id: "react-crud",
       title: "REACT CRUD APP",
@@ -228,19 +234,6 @@ export default function WorkPage() {
       status: "LIVE",
       category: "WEB DEVELOPMENT",
       githubUrl: "https://github.com/dariyozz/Internet-Technology",
-    },
-    // === COMPUTER SCIENCE FUNDAMENTALS ===
-    {
-      id: "algorithms-data-structures",
-      title: "ALGORITHMS & DATA STRUCTURES",
-      subtitle: "Core Computer Science",
-      description:
-        "Comprehensive collection of algorithm implementations and data structure exercises. Covers sorting, searching, graphs, trees, dynamic programming, and more. Essential computer science fundamentals in Java.",
-      tech: ["Java", "Algorithms", "Data Structures", "Problem Solving"],
-      year: "2024",
-      status: "LIVE",
-      category: "COMPUTER SCIENCE",
-      githubUrl: "https://github.com/dariyozz/Algorithms-DataStructures-Java",
     },
     {
       id: "advent-of-code",
@@ -278,7 +271,6 @@ export default function WorkPage() {
       category: "COMPUTER SCIENCE",
       githubUrl: "https://github.com/dariyozz/Structured-Programming",
     },
-    // === GAME DEVELOPMENT ===
     {
       id: "color-switch-game",
       title: "COLOR SWITCH GAME",
