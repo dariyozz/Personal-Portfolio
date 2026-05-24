@@ -6,37 +6,37 @@ import Link from "next/link"
 export default function HomePage() {
   const projects = [
     {
-      id: "emt-2025",
-      title: "EMT-2025",
-      subtitle: "Full-Stack E-Commerce Platform",
-      description:
-        "Enterprise-level e-commerce application built with Spring Boot backend and React frontend. Features include product management, shopping cart, order processing, user authentication, and admin dashboard. Demonstrates full-stack development with modern technologies and RESTful API design.",
-      tech: "Spring Boot, React, PostgreSQL",
-      year: "2024",
-      status: "LIVE",
-      githubUrl: "https://github.com/dariyozz/EMT-2025",
-    },
-    {
       id: "match-results-devops",
       title: "MATCH RESULTS DEVOPS",
       subtitle: "DevOps & Cloud Infrastructure",
       description:
         "Sports match results platform with complete DevOps pipeline implementation. Features CI/CD automation, containerization with Docker, Kubernetes orchestration, monitoring, and cloud deployment. Showcases modern DevOps practices and infrastructure as code.",
       tech: "Docker, Kubernetes, Jenkins, AWS",
-      year: "2024",
+      year: "2025",
       status: "LIVE",
       githubUrl: "https://github.com/dariyozz/Match-Results-DevOps-Project",
     },
     {
-      id: "advanced-programming",
-      title: "ADVANCED PROGRAMMING",
-      subtitle: "AI & Software Engineering",
+      id: "ethical-hacking",
+      title: "ETHICAL HACKING",
+      subtitle: "Cybersecurity Research & Penetration Testing",
       description:
-        "Collection of advanced programming projects demonstrating design patterns, algorithms, data structures, and software architecture. Includes machine learning implementations, AI algorithms, data science projects, and distributed systems.",
-      tech: "Java, Python, TensorFlow, ML",
-      year: "2024",
+        "Comprehensive collection of ethical hacking projects and security research. Includes penetration testing methodologies, vulnerability assessments, security audits, and defensive techniques. Showcases practical cybersecurity skills.",
+      tech: "Kali Linux, Metasploit, Burp Suite, Python",
+      year: "2026",
       status: "ONGOING",
-      githubUrl: "https://github.com/dariyozz/Advanced-Programming",
+      githubUrl: "https://github.com/dariyozz/Ethical-Hacking",
+    },
+    {
+      id: "data-science",
+      title: "DATA SCIENCE",
+      subtitle: "Analytics & Machine Learning",
+      description:
+        "Data science projects featuring exploratory data analysis, statistical modeling, and data visualization. Covers real-world datasets with insights extraction and predictive modeling techniques using Python and Jupyter Notebooks.",
+      tech: "Python, Pandas, NumPy, Jupyter Notebook",
+      year: "2026",
+      status: "LIVE",
+      githubUrl: "https://github.com/dariyozz/Data_Science",
     },
   ]
 
