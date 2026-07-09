@@ -7,7 +7,7 @@ export default function HomePage() {
   const projects = [
     {
       id: "match-results-devops",
-      title: "MATCH RESULTS DEVOPS",
+      title: "DevOps Project",
       subtitle: "DevOps & Cloud Infrastructure",
       description:
         "Sports match results platform with complete DevOps pipeline implementation. Features CI/CD automation, containerization with Docker, Kubernetes orchestration, monitoring, and cloud deployment. Showcases modern DevOps practices and infrastructure as code.",

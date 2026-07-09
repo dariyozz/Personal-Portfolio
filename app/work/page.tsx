@@ -5,6 +5,43 @@ import Link from "next/link"
 
 export default function WorkPage() {
   const projects = [
+    // === LATEST PROJECTS ===
+    {
+      id: "trading-app",
+      title: "TRADING APP",
+      subtitle: "Market Data & Trading Tool",
+      description:
+        "Trading application that collects and processes market data to support trading workflows. Built primarily in Python with automated data pipelines and a reproducible build setup.",
+      tech: ["Python", "Makefile", "Data Processing", "Automation"],
+      year: "2026",
+      status: "LIVE",
+      category: "BACKEND DEVELOPMENT",
+      githubUrl: "https://github.com/dariyozz/wbs_mk_trade",
+    },
+    {
+      id: "cloud-computing",
+      title: "CLOUD COMPUTING",
+      subtitle: "Cloud Infrastructure & Deployment",
+      description:
+        "Cloud computing projects covering containerized services, deployment automation, and infrastructure scripting. Combines Python services with Docker and shell-based tooling for cloud environments.",
+      tech: ["Python", "Docker", "Shell", "JavaScript", "Cloud"],
+      year: "2026",
+      status: "LIVE",
+      category: "DEVOPS & CLOUD",
+      githubUrl: "https://github.com/dariyozz/Cloud-computing",
+    },
+    {
+      id: "distributed-systems-app",
+      title: "DISTRIBUTED SYSTEMS APP",
+      subtitle: "Full-Stack Distributed Application",
+      description:
+        "Full-stack distributed systems application with a Python backend and TypeScript frontend. Features containerized services, a PostgreSQL database, and infrastructure tooling for scalable, fault-tolerant deployments.",
+      tech: ["Python", "TypeScript", "Docker", "PostgreSQL", "Distributed Systems"],
+      year: "2026",
+      status: "LIVE",
+      category: "SYSTEM DESIGN",
+      githubUrl: "https://github.com/dariyozz/Distributed-Systems-App",
+    },
     // === YOUR PRIORITY ORDER ===
     {
       id: "data-science",
