@@ -9,10 +9,7 @@ import Link from "next/link"
 export default function ResumePage() {
   const handleDownload = () => {
     // Open the PDF in a new tab - users can then download from there
-    window.open(
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/CopyOfDario_Jakovleski_Resume10192025-YnoyA8rqpMeqUTZE5yxZu8oYTczji4.pdf",
-      "_blank",
-    )
+    window.open("/Dario_Jakovleski_Resume.pdf", "_blank")
   }
 
   return (
