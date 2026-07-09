@@ -6,15 +6,15 @@ import Link from "next/link"
 export default function HomePage() {
   const projects = [
     {
-      id: "match-results-devops",
-      title: "MATCH RESULTS DEVOPS",
-      subtitle: "DevOps & Cloud Infrastructure",
+      id: "distributed-systems-app",
+      title: "Real-Time Smart City Monitoring",
+      subtitle: "Distributed Systems & Real-Time Data",
       description:
-        "Sports match results platform with complete DevOps pipeline implementation. Features CI/CD automation, containerization with Docker, Kubernetes orchestration, monitoring, and cloud deployment. Showcases modern DevOps practices and infrastructure as code.",
-      tech: "Docker, Kubernetes, Jenkins, AWS",
-      year: "2025",
+        "UrbanPulse, a distributed smart-city monitoring platform that simulates live IoT sensors across London, Tokyo, and New York. Streams readings through Kafka into PostgreSQL, InfluxDB, and Redis, detects alerts, and visualizes city state in a real-time React dashboard.",
+      tech: "Python, Kafka, FastAPI, React, PostgreSQL",
+      year: "2026",
       status: "LIVE",
-      githubUrl: "https://github.com/dariyozz/Match-Results-DevOps-Project",
+      githubUrl: "https://github.com/dariyozz/Distributed-Systems-App",
     },
     {
       id: "ethical-hacking",

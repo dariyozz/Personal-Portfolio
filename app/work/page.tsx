@@ -5,6 +5,43 @@ import Link from "next/link"
 
 export default function WorkPage() {
   const projects = [
+    // === LATEST PROJECTS ===
+    {
+      id: "graph-ml-project",
+      title: "GRAPH ML PROJECT",
+      subtitle: "Knowledge Graphs & GNNs",
+      description:
+        "Knowledge-graph and Graph Neural Network pipeline for link prediction, using economic complexity metrics to discover export-expansion opportunities for North Macedonia. Trains multiple GNN architectures (GraphSAGE, GAT, GCN, R-GCN, HGT, VGAE) with a Streamlit dashboard for exploring results.",
+      tech: ["Python", "PyTorch Geometric", "Neo4j", "Streamlit", "Docker"],
+      year: "2026",
+      status: "LIVE",
+      category: "MACHINE LEARNING",
+      githubUrl: "https://github.com/dariyozz/wbs_mk_trade",
+    },
+    {
+      id: "cloud-computing",
+      title: "CLOUD PROJECT",
+      subtitle: "Serverless LLM Inference",
+      description:
+        "Performance comparison of TinyLlama-1.1B inference running on GCP Cloud Run vs AWS Lambda. A single FastAPI Docker image auto-detects its platform, with k6 load testing and automated analysis of latency and cost across both clouds.",
+      tech: ["Python", "FastAPI", "Docker", "GCP Cloud Run", "AWS Lambda", "k6"],
+      year: "2026",
+      status: "LIVE",
+      category: "DEVOPS & CLOUD",
+      githubUrl: "https://github.com/dariyozz/Cloud-computing",
+    },
+    {
+      id: "distributed-systems-app",
+      title: "DISTRIBUTED SYSTEMS PROJECT",
+      subtitle: "Real-Time Smart City Monitoring",
+      description:
+        "UrbanPulse, a distributed smart-city monitoring platform that simulates live IoT sensors across London, Tokyo, and New York. Streams readings through Kafka into PostgreSQL, InfluxDB, and Redis, detects alerts, and visualizes city state in a real-time React dashboard.",
+      tech: ["Python", "Kafka", "FastAPI", "React", "PostgreSQL", "InfluxDB", "Redis"],
+      year: "2026",
+      status: "LIVE",
+      category: "SYSTEM DESIGN",
+      githubUrl: "https://github.com/dariyozz/Distributed-Systems-App",
+    },
     // === YOUR PRIORITY ORDER ===
     {
       id: "data-science",
