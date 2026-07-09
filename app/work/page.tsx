@@ -7,24 +7,24 @@ export default function WorkPage() {
   const projects = [
     // === LATEST PROJECTS ===
     {
-      id: "trading-app",
-      title: "TRADING APP",
-      subtitle: "Market Data & Trading Tool",
+      id: "graph-ml-project",
+      title: "GRAPH ML PROJECT",
+      subtitle: "Knowledge Graphs & GNNs",
       description:
-        "Trading application that collects and processes market data to support trading workflows. Built primarily in Python with automated data pipelines and a reproducible build setup.",
-      tech: ["Python", "Makefile", "Data Processing", "Automation"],
+        "Knowledge-graph and Graph Neural Network pipeline for link prediction, using economic complexity metrics to discover export-expansion opportunities for North Macedonia. Trains multiple GNN architectures (GraphSAGE, GAT, GCN, R-GCN, HGT, VGAE) with a Streamlit dashboard for exploring results.",
+      tech: ["Python", "PyTorch Geometric", "Neo4j", "Streamlit", "Docker"],
       year: "2026",
       status: "LIVE",
-      category: "BACKEND DEVELOPMENT",
+      category: "MACHINE LEARNING",
       githubUrl: "https://github.com/dariyozz/wbs_mk_trade",
     },
     {
       id: "cloud-computing",
-      title: "CLOUD COMPUTING",
-      subtitle: "Cloud Infrastructure & Deployment",
+      title: "CLOUD PROJECT",
+      subtitle: "Serverless LLM Inference",
       description:
-        "Cloud computing projects covering containerized services, deployment automation, and infrastructure scripting. Combines Python services with Docker and shell-based tooling for cloud environments.",
-      tech: ["Python", "Docker", "Shell", "JavaScript", "Cloud"],
+        "Performance comparison of TinyLlama-1.1B inference running on GCP Cloud Run vs AWS Lambda. A single FastAPI Docker image auto-detects its platform, with k6 load testing and automated analysis of latency and cost across both clouds.",
+      tech: ["Python", "FastAPI", "Docker", "GCP Cloud Run", "AWS Lambda", "k6"],
       year: "2026",
       status: "LIVE",
       category: "DEVOPS & CLOUD",
@@ -32,11 +32,11 @@ export default function WorkPage() {
     },
     {
       id: "distributed-systems-app",
-      title: "DISTRIBUTED SYSTEMS APP",
-      subtitle: "Full-Stack Distributed Application",
+      title: "DISTRIBUTED SYSTEMS PROJECT",
+      subtitle: "Real-Time Smart City Monitoring",
       description:
-        "Full-stack distributed systems application with a Python backend and TypeScript frontend. Features containerized services, a PostgreSQL database, and infrastructure tooling for scalable, fault-tolerant deployments.",
-      tech: ["Python", "TypeScript", "Docker", "PostgreSQL", "Distributed Systems"],
+        "UrbanPulse, a distributed smart-city monitoring platform that simulates live IoT sensors across London, Tokyo, and New York. Streams readings through Kafka into PostgreSQL, InfluxDB, and Redis, detects alerts, and visualizes city state in a real-time React dashboard.",
+      tech: ["Python", "Kafka", "FastAPI", "React", "PostgreSQL", "InfluxDB", "Redis"],
       year: "2026",
       status: "LIVE",
       category: "SYSTEM DESIGN",
